@@ -1,0 +1,132 @@
+body,h1,h2,h3,p,div,span, svg{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px;
+    font-weight: 400;
+}
+h1{
+    font-size:4em;
+    font-weight:200;
+    color: #F4382C;
+}
+#bookCount{
+    color: #000;
+    font-size:12em;
+    font-weight:100;
+    margin-top:-6px;
+    margin-left:-12px;
+}
+h2{
+    font-weight:300;
+    font-size:2em;
+}
+h3{
+    font-size:1em;
+    font-weight:700;
+    font-variant: small-caps;
+    color: #F4382C;
+    margin-bottom: 0.5em;
+}
+p{
+    line-height: 1.3;
+}
+.third p{
+    text-align:center;
+    font-size:0.8em;
+}
+.title{
+    font-weight: 600;
+}
+.italic{
+    font-style: italic;
+    opacity: 60%;
+}
+.themes h2{
+    color: #F4382C;
+    padding-top:0.5em;
+    margin-bottom: 0.25em;
+    border-top: 0.5px solid rgba(0,0,0,0.5);
+}
+
+.grid{
+    width: 90%;
+    max-width: 680px;
+    margin-top:3em;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-column-gap:32px;
+    grid-row-gap:32px;
+    grid-template-columns: 1fr;
+    margin-bottom:4em;
+}
+.section{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 32px;
+}
+
+.whole{
+    grid-column: auto/ span 6;
+}
+.half{
+    grid-column: auto / span 3;
+}
+.third{
+    grid-column: auto/ span 2;
+}
+.bookcover{
+    grid-column: auto/ span 1;
+}
+.bookcover img{
+    max-width:100%;
+    height:auto;
+    border-radius:4px;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25); 
+    box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+}
+
+/* Vertical Spacing */
+.miniblock{
+    margin-bottom:1em;
+}
+svg{
+    margin-top:1em;
+}
+.grid>div{
+    border-top: 0.5px solid rgba(0,0,0,0.5);
+}
+.grid div:first-child{
+    border-top:0;
+    padding-top: 1em;
+}
+.themes div:first-child{
+    margin-bottom:1em;
+}
+#donuts svg{
+    margin-bottom:0.5em;
+}
+.grid>.themes{
+    border-top: 0;
+    margin-bottom:-0.5em;
+}
+
+@media screen and (max-width: 580px) {
+    .section {
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 16px;
+    }
+    .themes .section{
+        grid-template-columns: repeat(auto-fill, 80px);
+        grid-row-gap: 16px;
+    }
+    .third{
+        grid-column: auto/ span 6;
+        max-width:240px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+  }

@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <title>Alex Tsai's Books of 2020</title>
+    <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="draw.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+<body>
+  <div class="grid">
+    <div id="intro">
+      <h1>2020 End of Year Book Report</h1>
+      <p></br>A look back at a year in books. the figures, data, and themes across all the books I read over the past year. </br></br><span class="italic">—Alex Tsai</span></p>
+    </div>
+    <div id="hero" class="section">
+      <div class="half"> <!--left-->
+        <h3>books read</h3>
+        <h1 id="bookCount">22</h1>
+      </div>
+      <div class="half"> <!--right-->
+        <div class="miniblock">
+          <h3>total pages</h3>
+          <h2>7,542</h2>
+        </div>
+        <div class="miniblock">
+          <h3>shortest book</h3>
+          <p><span class="title">How to Wash the Dishes</span><span class="italic"> by Peter Miller</span></p>
+        </div>
+        <div class="miniblock">
+          <h3>longest book</h3>
+          <p><span class="title">Rhythm of War</span><span class="italic"> by Brandon Sanderson</span></p>
+        </div>
+      </div>
+    </div>
+    <div id="publishdate">
+      <div>
+        <h3>distribution of original publish date</h3>
+        <p>Vast majority of the books I read were fairly recent with over half of them coming from the past couple years and only 4 from before the year 2000.</p>
+        <!-- D3 SVG Inserted here -->
+    </div>
+    </div>
+    <div id="donuts" class="section">
+      <div class="whole">
+        <h3>proportions of Interest</h3>
+        <p>While I read a lot of stories, I wish I read more fiction.  On the other hand I’m proud I didn’t feel compelled to finish books for the sake of finishing them.</p>
+      </div>
+      <div  class="third">
+        <div id="bookType"></div>
+        <p>Read less fiction than I would've liked</p>
+      </div>
+      <div class="third">
+        <div id="fromLibrary"></div>
+        <p>Mostly borrowed books from the library (Thanks <a href="https://libbyapp.com/">Libby!</a>)</p>
+      </div>
+      <div class="third">
+        <div id="finished" ></div>
+        <p>Finished 22 out of 34 books started</p>
+      </div>
+    </div>
+    
+    <div class="themes"> <!--Escapism-->
+      <h2>5 x 22</h2>
+      <p style="margin-bottom: 2em;" class="italic">5 themes across 22 reads</p>
+      <div class="section" style="margin-bottom: 1em;">
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3355187390" target=”_blank”><img  title="Dune by Frank Herbert" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434908555l/234225._SY475_.jpg" alt="Dune Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3355207082" target=”_blank”><img  title="What I'd Say to the Martians and Other Veiled Threats by Jack Handey" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1440618023l/2092146._SY475_.jpg" alt="What I'd Say to the Martians and Other Veiled Threats Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3355950103" target=”_blank”><img  title="Howl's Moving Castle by Diana Wynne Jones" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1407450489l/6294.jpg" alt="Howl's Moving Castle Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3605101797" target=”_blank”><img  title="Rhythm of War by Brandon Sanderson" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1599911216l/49021976.jpg" alt="Rhythm of War Book Cover"></a>
+      </div>
+      <h3>escapism</h3>
+      <p>Like many others, reading was a way to get a little escape during quarantine. Fantasy let me immerse myself in a story and world while humor was just a way to get a little levity during difficult times. The fantasy books also provided a nice blend, there's the messy politics of Dune, the intimacy of How's Moving Castle, as well as the Rhythm of War taking a look at the mental and emotional health of heroes. I usually read more Sci-Fi, but for some reason wasn't feeling the dystopic feel for some reason!</p>
+    </div>
+    <div class="themes"><!--Work-->
+      <div class="section">
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3207330343" target=”_blank”><img  title="Thinking in Systems: A Primer by Donella H. Meadows" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1390169859l/3828902.jpg" alt="Thinking in Systems: A Primer Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3407983055" target=”_blank”><img  title="Manage Your Day-to-Day by Jocelyn K. Glei" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1368422443l/17606014.jpg" alt="Manage Your Day-to-Day Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3445277182" target=”_blank”><img  title="The Making of a Manager by Julie Zhuo" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548809382l/38821039.jpg" alt="The Making of a Manager Book Cover"></a>
+      </div>
+      <h3>career</h3>
+      <p>Books have continued to be helpful for me to navigate my career. Designing in the 21st century means designing for and within incredibly complex, interlocking systems. We design systems within systems and I wanted to have better language and frameworks for understanding them. Questions on how to do that kind of complex and creative thinking in the chaos, urgency, and pressures of today's workplace lead me to Manage Your Day-to-Day. Lastly, I had a chance to manage an intern this year and when she told me she liked The Making of a Manager, I felt like I should probably read it too (don't think I could be an actual manager based on what the book describes but being an intern manager was one of the most fulfilling things I've done so far).</p>
+    </div>
+    <div class="themes"><!--Refocusing-->
+      <div class="section">
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3116772986" target=”_blank”><img  title="The Ragamuffin Gospel by Brennan Manning" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1266488592l/173526.jpg" alt="The Ragamuffin Gospel Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3026980881" target=”_blank”><img  title="The Second Mountain by David Brooks" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546041670l/40642458.jpg" alt="The Second Mountain Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3207329500" target=”_blank”><img  title="Atomic Habits by James Clear" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535115320l/40121378._SY475_.jpg" alt="Atomic Habits Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/2933808012" target=”_blank”><img  title="The Gift of Being Yourself by David G. Benner" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347731832l/1080607.jpg" alt="The Gift of Being Yourself Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3318197403" target=”_blank”><img  title="How to Wash the Dishes by Peter Miller" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1582578893l/51696468._SY475_.jpg" alt="How to Wash the Dishes Book Cover"></a>
+      </div>
+      <h3>refocusing</h3>
+      <p>Coming into the new decade, I thought it'd be an opportunity to refocus in faith and life. Taking the time to reflect on what it means to depend on Jesus instead of myself, thinking a bit about purpose and character, as well as practically taking a look at habits. The rest of 2020 put a bit of a wrench in all that, but it still ended up requiring going back to the basics and thinking about the routines and mundane (like washing the dishes!).</p>
+    </div>
+    <div class="themes"><!--Racial Justice-->
+      <div class="section">
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3363217557" target=”_blank”><img  title="How to Be an Antiracist by Ibram X. Kendi" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1560163756l/40265832.jpg" alt="How to Be an Antiracist Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3362626422" target=”_blank”><img  title="So You Want to Talk About Race by Ijeoma Oluo" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1499224833l/35099718.jpg" alt="So You Want to Talk About Race Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3142701520" target=”_blank”><img  title="Jay-Z: Made in America Book by Michael Eric Dyson" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1570246535l/51079895._SX318_SY475_.jpg" alt="Jay-Z: Made in America Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3226637231" target=”_blank”><img  title="The Butterfly Effect: Kendrick Lamar by Marcus J. Moore" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600611188l/50892352.jpg" alt="The Butterfly Effect:Kendrick Lamar Book Cover"></a>
+      </div>
+      <h3>race in america</h3>
+      <p>With the national reckoning on race this year, I knew I also needed to spend more time learning. I've read articles, watched videos, and listened to podcasts but I don't think there's substitutes to learning through books. Ibram X. Kendi and Ijeoma Oluo lay out the history, statistics, and personal experience in a way that provided a lot more clarity to the personal and collective experience and injustices that Black people face in America. I want to be cautious about the stereotypes around Black men having to either be a rapper or athlete, but I've long admired Jay-Z and Kendrick and their work as artists and cultural strategists are inseparable from being Black. They also provide a stark reminder that no amount of money or success can help them escape racism, even at the top of their field they still face it regardless.</p>
+    </div>
+    <div class="themes"><!--Behind the Scenes-->
+      <div class="section">
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3355218258" target=”_blank”><img  title="L.A. Son by Roy Choi" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1374635033l/17331327.jpg" alt="L.A. Son Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3355160489" target=”_blank”><img  title="The Office: An Oral History by Andy Greene" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585413349l/51700301._SY475_.jpg" alt="The Office: An Oral History Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3439591947" target=”_blank”><img  title="Bad Blood by John Carreyrou" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556268702l/37976541.jpg" alt="Bad Blood Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3707463084" target=”_blank”><img  title="The Biggest Bluff by Maria Konnikova" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585143928l/49814228.jpg" alt="The Biggest Bluff Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/3608436325" target=”_blank”><img  title="The Gatekeepers: Chief of Staffs by Chris Whipple" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1471286724l/31159759.jpg" alt="The Gatekeepers: Chief of Staffs Book Cover"></a>
+        <a class="bookcover" href="https://www.goodreads.com/review/show/2472468698" target=”_blank”><img  title="Bird by Bird by Anne Lamott" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394996112l/12543.jpg" alt="Bird by Bird Book Cover"></a>
+
+      </div>
+      <h3>Behind the Scenes</h3>
+      <p>I'm not sure why these "behind the scenes" type books looking at a person or institution made up so much of my reading this year. I think partly this is just the randomness of Libby waitlists, but I've come to realize that sometimes my primary motivation for reading may be curiosity. Learning not for the sake of applying, but just because I find it fascinating to pull back the curtain a bit and find out why. Why do people do the things they do or why do things happen the way they do. I think that shows in the breadth of subjects here from Chief of Staff to Chef or Silicon Valley to Sitcoms, I've learned this year if there's something that piques my curiosity there's probably a book for it.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
